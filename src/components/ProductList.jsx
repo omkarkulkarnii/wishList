@@ -7,7 +7,7 @@ const ProductList = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("https://wishlink-backend.onrender.comproducts", {
+    fetch("https://wishlink-backend.onrender.com/products", {
       headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
     })
       .then((res) => {
