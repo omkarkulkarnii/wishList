@@ -28,6 +28,7 @@ const AddProduct = () => {
       if (res.ok) {
         setMessage("✅ Product added successfully!");
       } else {
+        console.log(res);
         setMessage(
           `❌ YOU ARE NOT A SELLER, PLEASE REGISTER AS A SELLER FIRST`
         );
